@@ -23,8 +23,12 @@ nav {
     background-color: rgb(246, 241, 241);
   }
 
-  body{
-    background-image:url("images/bcgn.jpeg");
+  .marquee{
+    direction: "right" 
+    behavior="alternate" 
+    style="border:BLACK 2px SOLID"
+    Geeks for Geeks
+
   }
 
   

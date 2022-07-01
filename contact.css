@@ -1,5 +1,6 @@
 nav {
     list-style-type: none;
+    text-align: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -21,14 +22,28 @@ nav {
   li a:hover {
     background-color: rgb(246, 241, 241);
   }
+  
+  .contact textarea {
+    width: 30%;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
 
   footer {
-    position: fixed;
-    left: 10;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    background-color: rgb(40, 218, 241);
-    color: white;
-  }
+    align-items: flex-end;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(40, 218, 241);
+        color: white;
+        text-align: center;
+        grid-area:footer;
+    }
+  
+  
+ 
