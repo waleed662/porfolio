@@ -1,0 +1,85 @@
+/* nav starts */
+nav {
+  display: none;
+background-color: rgb(167, 167, 207); 
+position: fixed;
+top: 0;
+left: 80%;
+width: 20%;
+    height: 100vh;
+}
+
+li {
+  float: left;
+}
+ul{
+   list-style-type: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+}
+/* nav ends */
+
+/* hamburger icon begins */
+.shownav {
+height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid orange;
+    border-bottom: 0.2em solid orange;
+   border-radius: 0.1em;
+}
+ .shownav:before { 
+     content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+   
+    border-top: 0.2em solid green;
+}
+ #clicked .shownav {display: block;}
+#clicked .nav {display: none}
+
+#clicked:target .shownav{display: none;}
+#clicked:target nav{display:block;}
+
+.hidenav{display:none;}
+#clicked:target .hidenav{display:block;}
+/* handburger icon ends*/
+
+body{
+    background-image:url("images/Savin-NY-Website-Background-Web.jpg");
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+
+/*  footer start */
+footer {
+  align-items: flex-end;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(0, 174, 255);
+      color: white;
+      text-align: center
+  }
+  /* footer end */
+  .content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
