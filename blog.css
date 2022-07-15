@@ -6,32 +6,47 @@ nav {
     overflow: hidden;
     background-color: rgb(40, 218, 218);
   }
-  main{
-    grid-area: main;
-    background-color: white;
-    }
-    aside{
-        grid-area: aside; 
-        background-color:rgb(103, 143, 161);
-        list-style: none;
-        align-items: center;
-        text-align: center;
-        color: white;
-        
-    }
-    
-  body {
-    display: grid;
-    grid-template-columns: 50%  50%;
-grid-template-rows:auto;
-grid-template-areas: "nav nav"
-                    "main aside"
-                    "footer footer";
-                    
-                
-}
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: url(images/bbn.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
 
-
+  
   li {
     display: inline;
   }
@@ -49,6 +64,12 @@ grid-template-areas: "nav nav"
     text-decoration: none;
   }
   
+.social
+{
+background-image: url(images/bbn.jpg);
+}
+
+
   li a:hover {
     background-color: rgb(246, 241, 241);
   }

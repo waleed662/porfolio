@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blog.css" media="screen and
       (min-width:1000px)">
+      <link rel="stylesheet" href="blogmobile.css" media="screen and (max-width:
+    1000px)">
     <title>blog</title>
     
 </head>
-<body>
-
+<body id="clicked">
+  <a href="#clicked" class="shownav"></a>
+ 
     <nav>
 
         <ul>
+          <a href="#" class="hidenav">x</a>
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -22,16 +26,22 @@
         </ul>
       </nav>
 
-      <main>
-        <img src="images/IMG_4052.JPG" alt="my picture" />
-  
-      </main>
-      <aside>
-        <div class="container">
-          <img src="https://img.icons8.com/color/240/000000/github--v1.png"
-            alt="icon" />
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">I am John Doe</h1>
+          <p>And I'm a Photographer</p>
+          <button>Hire me</button>
         </div>
-</aside>
+      </div>
+
+      <hr class="social"> 
+ <h2>social link</h2>
+ <a href="https://github.com/waleed662/porfolio.git">
+    <img
+        src="https://img.icons8.com/ios-glyphs/90/000000/github.png"
+        alt="github icon" /></a>
+        <p>github link</p>
+    </hr>
 
       <footer>
         <a href="https://github.com/waleed662/porfolio.git">

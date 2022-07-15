@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="contact.css" media="screen and
       (min-width:1000px)">
+      <link rel="stylesheet" href="contactmobile.css" media="screen and (max-width:
+    1000px)">
     <title>Contact</title>
 </head>
-<body>
+<body id="clicked">
+  <a href="#clicked" class="shownav"></a>
+  
     <nav>
 
         <ul>
+          <a href="#" class="hidenav">x</a>
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -31,15 +37,16 @@
 </main>
 </hr>
 
- <hr class="social"> 
+ <hr> 
  <h2>social link</h2>
- <a href="https://github.com/waleed662/porfolio.git">
-    <img
-        src="https://img.icons8.com/ios-glyphs/90/000000/github.png"
-        alt="github icon" /></a>
-        <p>github link</p>
+ <div class="wrapper">
+  <a class="hover-fx"><i class="fab fa-instagram"></i></a>
+  <a class="hover-fx"><i class="fab fa-facebook"></i></a>
+  <a class="hover-fx"><i class="fab fa-twitter"></i></a>
+  <a class="hover-fx"><i class="fab fa-github"></i></a>
+ <a href="https://github.com/waleed662/porfolio.git"></a>
     </hr>
-
+  </div>
 
 <footer>
     <a href="https://github.com/waleed662/porfolio.git">

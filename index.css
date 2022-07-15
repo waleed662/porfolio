@@ -14,7 +14,7 @@ nav {
 
   h1{
     text-align: center;
-    color: white;
+    color: black;
 
   }
   
@@ -47,7 +47,7 @@ nav {
 
   }
 body{
-    background-image: url(images/bgrnd.jpg);
+    background-image: url(images/bbn.jpg);
 }
   
   footer {
