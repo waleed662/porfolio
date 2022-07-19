@@ -63,11 +63,22 @@ nav {
   #clicked:target .hidenav{display:block;}
   
   body{
-      background-image: url(images/bgrnd.jpg);
-      
+    background-image: url(images/bbn.jpg);
+}
+  .polaroid{
+    width: 100%;
+    padding-left: 40%;
+}
+.polaroid{
+    position: relative;
+    width: 50%;
   }
   
-  
+  .image {
+    display: block;
+    width: 40%;
+    height: auto;
+  }
   footer {
       align-items: flex-end;
           position: fixed;

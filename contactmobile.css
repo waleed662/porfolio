@@ -15,6 +15,9 @@ nav {
   ul{
      list-style-type: none;
   }
+  h1,h2{
+    text-align: center;
+  }
   
   li a {
     display: block ;
@@ -63,10 +66,68 @@ nav {
   #clicked:target .hidenav{display:block;}
   
   body{
-      background-image: url(images/bgrnd.jpg);
-      
+    background-image: url(images/yell.jpg);
+}
+.contact textarea {
+  
+    width: 30%;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+
+  }
+.contact{
+    padding-left: 40%;
+    color: white;
+
+}
+
+.wrapper a{
+    color: #fff;
   }
   
+  .hover-fx{
+    font-size: 3rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+  }
+  
+  .hover-fx:after{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px white;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+  }
+  
+  .hover-fx:hover{
+    background-color: #fff;
+    color: black;
+  }
+  
+  .hover-fx:hover:after{
+    opacity: 1;
+    transform: scale(1.15);
+  }
   
   footer {
       align-items: flex-end;
