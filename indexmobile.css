@@ -66,28 +66,93 @@ nav {
     width: 100%;
     margin: 0;
     padding: 0;
-    animation: 10s ease infinite;
+    animation: color 5s ease infinite;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+  }
+  
+  .span-container {
+    width: 100px;
+    height: 100px;
+    transform: translate(-50% -50%);
+    position: absolute;
+    top: 10%;
+    left: 45%;
+  }
+  
+  span {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    animation: speed 2s infinite ease-in-out;
+  }
+  
+  .one {
+    background: #c9ba12;
+    animation-delay: 1.5s;
+  }
+  
+  .two {
+    background: #a11cc7;
+    animation-delay: 1s;
+  }
+  
+  .three {
+    background: #237ead;
+    animation-delay: 0.5s;
+  }
+  
+  .four {
+    background: #e0bcbc;
+  }
+  
+  @keyframes speed {
+    0% {
+      transform: translate(0%);
+      border-radius: 50%;
+    }
+  
+    25% {
+      transform: translate(150%) scale(0.5);
+      border-radius: 0%;
+    }
+  
+    50% {
+      transform: translate(150%, 150%);
+      border-radius: 50%;
+    }
+  
+    75% {
+      transform: translate(0, 150%) scale(0.5);
+      border-radius: 0%;
+    }
   }
     @keyframes color {
       0%{
-        background: #008CBA;
+        background:  white;
       }
       20%{
-        background: #00732c;
+        background: rgb(40, 218, 218);
       }
       40%{
-        background: #e56a72;
+        background: white;
       }
       60%{
-        background: #84a9e9;
+        background:  rgb(40, 218, 218);
       }
       80%{
-        background: #96a949;
+        background: white;
       }
       100%{
-        background: #008CBA;
+        background: rgb(40, 218, 218);
       }
-  
     }
   .polaroid{
     width: 100%;
