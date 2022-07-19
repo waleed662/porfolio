@@ -63,7 +63,7 @@ nav {
   #clicked:target .shownav{display: none;}
   #clicked:target nav{display:block;}
   .hidenav{
-      color: white;
+      color: black;
   }
   
   .hidenav{display:none;}

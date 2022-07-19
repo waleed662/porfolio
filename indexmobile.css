@@ -61,10 +61,34 @@ nav {
   
   .hidenav{display:none;}
   #clicked:target .hidenav{display:block;}
-  
   body{
-    background-image: url(images/bbn.jpg);
-}
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    animation: 10s ease infinite;
+  }
+    @keyframes color {
+      0%{
+        background: #008CBA;
+      }
+      20%{
+        background: #00732c;
+      }
+      40%{
+        background: #e56a72;
+      }
+      60%{
+        background: #84a9e9;
+      }
+      80%{
+        background: #96a949;
+      }
+      100%{
+        background: #008CBA;
+      }
+  
+    }
   .polaroid{
     width: 100%;
     padding-left: 40%;

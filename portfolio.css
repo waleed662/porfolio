@@ -11,10 +11,9 @@ nav {
     display: inline;
   }
 
-  body{
-    background-image: url(images/bgrnd.jpg);
-    
-}
+  body {
+    background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+    }
 
 h1{
     text-align: center;

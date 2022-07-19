@@ -17,7 +17,7 @@ nav {
 
  
   body{
-      background-image: url(images/yell.jpg);
+    background-image: linear-gradient(to bottom right, #c9d0d7, #0f1a3b, #1f0a17, rgb(185, 71, 42));
   }
   
   li a {
@@ -50,6 +50,12 @@ nav {
 
 .wrapper a{
   color: #fff;
+}
+
+.wrapper{
+  position: relative;
+  align-items: center;
+  left: 45ex;
 }
 
 .hover-fx{
