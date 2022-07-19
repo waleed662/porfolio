@@ -9,7 +9,6 @@ nav {
 p{
   background-color: aliceblue;
   
-  
 }
   .polaroid{
       width: 100%;
@@ -63,7 +62,6 @@ body{
 .span-container {
   width: 100px;
   height: 100px;
-  transform: translate(-50% -50%);
   position: absolute;
   top: 20%;
   left: 45%;
@@ -142,7 +140,7 @@ span {
   }
   footer {
     position: fixed;
-    left: 10;
+    left: 0%;
     bottom: 0;
     width: 100%;
     text-align: center;
