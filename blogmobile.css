@@ -8,7 +8,9 @@ nav {
     width: 30%;
     height: 100vh;
   }
-  
+  ul{
+     list-style-type: none;
+  }
   li {
     float: right;
   }
@@ -38,54 +40,47 @@ nav {
       background-color: rgb(246, 241, 241);
   }
   
-  .shownav {
-      height: 0.8em;
-      width: 1.25em;
-      display: block;
-      border-top: 0.2em solid rgb(47, 0, 255);
-      border-bottom: 0.2em solid rgb(0, 26, 255);
-      border-radius: 0.1em;
-  }
-   .shownav:before { 
-       content: '';
-       position: absolute;
-       width: 1.25em;
-       margin-top: 0.3em;
-       border-top: 0.2em solid rgb(15, 0, 128);
-  }
   
+.shownav {
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid rgb(47, 0, 255);
+    border-bottom: 0.2em solid rgb(0, 26, 255);
+    border-radius: 0.1em;
+}
+ .shownav:before { 
+     content: '';
+     position: absolute;
+     width: 1.25em;
+     margin-top: 0.3em;
+     border-top: 0.2em solid rgb(15, 0, 128);
+}
+
    #clicked .shownav {display: block;}
-   #clicked .nav {display: none}
+  #clicked .nav {display: none}
   
   #clicked:target .shownav{display: none;}
   #clicked:target nav{display:block;}
+  .hidenav{
+      color: white;
+  }
   
   .hidenav{display:none;}
   #clicked:target .hidenav{display:block;}
 
-  body, html {
+  .hero-image {
+    background-image: url(images/bbn.jpg);
+    
+  }
+  
+   body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+
   }
   
-  .hero-image {
-    background-image: url(images/bbn.jpg);
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-  }
   
   .hero-text button {
     border: none;
@@ -102,10 +97,7 @@ nav {
     background-color: #555;
     color: white;
   }
-  body{
-   
-    background-image: url(images/bbn.jpg);
-  }
+ 
   .wrapper a{
     color: #fff;
   }
@@ -154,19 +146,76 @@ nav {
     background-color: #555;
 padding: 65px}
   
-  footer {
-      align-items: flex-end;
-          position: fixed;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background-color: rgb(40, 218, 241);
-          color: white;
-          text-align: center
+   
+     
+        
+      body{
+        
+   background-image:url(images/bbn.jpg)
       }
-  
-      .content {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-    }
+      .wrapper a{
+        color: #fff;
+      }
+      
+      .hover-fx{
+        font-size: 3rem;
+        display: inline-block;
+        cursor: pointer;
+        margin: 15px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: 300ms;
+      }
+      
+      .hover-fx:after{
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        content: '';
+        box-sizing: content-box;
+        box-shadow: 0 0 0 3px white;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 300ms;
+      }
+      
+      .hover-fx:hover{
+        background-color: #fff;
+        color: black;
+      }
+      
+      .hover-fx:hover:after{
+        opacity: 1;
+        transform: scale(1.15);
+      }
+      
+      main{
+        background-color: #555;
+    padding: 65px}
+      
+      footer {
+          align-items: flex-end;
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: rgb(40, 218, 241);
+              color: white;
+              text-align: center
+          }
+      
+          .content {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+        }
+    
+    
