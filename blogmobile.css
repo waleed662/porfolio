@@ -63,7 +63,7 @@ nav {
   #clicked:target .shownav{display: none;}
   #clicked:target nav{display:block;}
   .hidenav{
-      color: black;
+      color:rgb(246, 241, 241);
   }
   
   .hidenav{display:none;}

@@ -22,10 +22,21 @@ nav {
   li a:hover {
     background-color: rgb(246, 241, 241);
   }
+  
+  body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+  }
+
+  img  {
+    width: 50%;
+  }
+  p{
+    color: white;
+}
 
   footer {
     position: fixed;
-    left: 10;
     bottom: 0;
     width: 100%;
     text-align: center;

@@ -7,7 +7,9 @@ nav {
     width: 30%;
     height: 100vh;
   }
-  
+  p{
+      color: white;
+  }
   li {
     float: right;
   }
@@ -61,13 +63,20 @@ nav {
   .hidenav{display:none;}
   #clicked:target .hidenav{display:block;}
   
+  body{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+  }
+
+  img  {
+    width: 50%;
+  }
 
 
 
   footer {
     align-items: flex-end;
         position: fixed;
-        left: 0;
         bottom: 0;
         width: 100%;
         background-color: rgb(40, 218, 241);
